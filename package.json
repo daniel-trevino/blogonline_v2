@@ -1,0 +1,40 @@
+{
+  "name": "blogonline-v3",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^4.1.2",
+    "custom-react-scripts": "0.2.2",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "typi": "^3.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "precommit": "pretty-quick --staged && lint-staged",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.6",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-prettier": "^2.6.2",
+    "eslint-plugin-react": "^7.10.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.2.0",
+    "prettier": "^1.13.7",
+    "pretty-quick": "^1.6.0",
+    "sass-mq": "^5.0.0"
+  }
+}

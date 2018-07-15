@@ -1,0 +1,108 @@
+@import './variables';
+@import './typi';
+@import './mixins';
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+
+h1 {
+  @include typi('h1');
+}
+
+h2 {
+  @include typi('h2');
+}
+
+h3 {
+  @include typi('h3');
+}
+
+h4 {
+  @include typi('h4');
+}
+
+h5 {
+  @include typi('h5');
+}
+
+h6 {
+  @include typi('h6');
+}
+
+p,
+a,
+li,
+ul,
+ol,
+dd {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color: inherit;
+  @include typi('body');
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+li,
+ul,
+ol,
+dd,
+b,
+i,
+p {
+  color: $color-dark;
+}
+
+b {
+  font-weight: bold;
+}
+
+a {
+  color: $color-primary;
+}
+
+ul {
+  list-style-type: disc;
+  @include padding-l-sm;
+  @include margin-b-xs;
+  li {
+    margin-bottom: 0.5em;
+  }
+}
+
+ol {
+  @include padding-l-sm;
+  @include margin-b-xs;
+  li {
+    margin-bottom: 0.5em;
+  }
+}
+
+mark {
+  padding: 0.25em;
+  background-color: $color-secondary;
+  color: $color-dark;
+}
+
+img {
+  @include margin-y-xs;
+  @include margin-b-sm;
+}
+
+dfn {
+  font-style: normal;
+  color: $color-dark;
+}
+
+dd {
+  @include margin-b-xs;
+}

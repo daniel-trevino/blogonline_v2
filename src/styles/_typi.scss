@@ -1,0 +1,72 @@
+@import '~typi/scss/typi';
+@include typi-init;
+$breakpoints: (
+  xs: 400px,
+  sm: 576px,
+  md: 767px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1600px
+);
+$typi: (
+  base: (
+    null: (
+      16px,
+      1.5
+    ),
+    xs: (
+      16px,
+      1.5
+    ),
+    md: (
+      16px,
+      1.5
+    ),
+    xxl: (
+      18px,
+      1.5
+    )
+  ),
+  h1: (
+    null: (
+      2.2em,
+      1.5
+    )
+  ),
+  h2: (
+    null: (
+      2em,
+      1.5
+    )
+  ),
+  h3: (
+    null: (
+      1.8em,
+      1.5
+    )
+  ),
+  h4: (
+    null: (
+      1.6em,
+      1.5
+    )
+  ),
+  h5: (
+    null: (
+      1.4em,
+      1.5
+    )
+  ),
+  h6: (
+    null: (
+      1.2em,
+      1.5
+    )
+  ),
+  body: (
+    null: (
+      1em,
+      1.5
+    )
+  )
+);

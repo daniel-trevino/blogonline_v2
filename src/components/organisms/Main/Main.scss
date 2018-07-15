@@ -1,0 +1,39 @@
+@import 'src/styles/variables';
+
+.Main {
+  text-align: center;
+}
+
+.Main__header {
+  height: 200px;
+  padding: 20px;
+  background-color: #222222;
+  text-align: center;
+  color: $color-white;
+}
+
+.Main__title {
+  justify-content: center;
+  color: $color-white;
+}
+.Main__subtitle {
+  font-weight: 100;
+}
+
+.Main__logo {
+  height: 80px;
+  animation: Main__logo--spin infinite 20s linear;
+}
+
+.Main__intro {
+  font-size: large;
+}
+
+@keyframes Main__logo--spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

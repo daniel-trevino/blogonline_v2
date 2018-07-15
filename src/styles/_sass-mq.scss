@@ -1,0 +1,13 @@
+$mq-breakpoints: (
+  xs: 400px,
+  sm: 576px,
+  md: 767px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1600px
+) !default;
+$mq-show-breakpoints: (xs, sm, md, lg, xl, xxl);
+
+// We need to import the module AFTER we overwrite the variables.
+// Weird huh?
+@import '~sass-mq/mq';
