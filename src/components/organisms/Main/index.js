@@ -10,12 +10,14 @@ export default () => (
       <img src={logo} className="Main__logo" alt="logo" />
       <h2 className="Main__title">
         <span>
-custom-react-scripts
+My Website
         </span>
       </h2>
     </div>
     <div className="Main__subtitle">
-      allow custom config for create-react-app without ejecting
+      <p>
+allow custom config for create-react-app without ejecting
+      </p>
     </div>
   </div>
 );

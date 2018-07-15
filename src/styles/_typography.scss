@@ -1,7 +1,31 @@
 @import './variables';
 @import './typi';
 @import './mixins';
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Titillium+Web');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dfn {
+  font-family: $font-heading;
+  font-weight: 700;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  a {
+    font-family: $font-heading;
+    font-size: inherit;
+  }
+}
 
 h1 {
   @include typi('h1');
@@ -33,7 +57,8 @@ li,
 ul,
 ol,
 dd {
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  // font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-family: $font-body;
   font-weight: 400;
   color: inherit;
   @include typi('body');
@@ -59,7 +84,7 @@ dd,
 b,
 i,
 p {
-  color: $color-dark;
+  color: $color-accent1;
 }
 
 b {
@@ -87,22 +112,7 @@ ol {
   }
 }
 
-mark {
-  padding: 0.25em;
-  background-color: $color-secondary;
-  color: $color-dark;
-}
-
 img {
   @include margin-y-xs;
   @include margin-b-sm;
-}
-
-dfn {
-  font-style: normal;
-  color: $color-dark;
-}
-
-dd {
-  @include margin-b-xs;
 }
