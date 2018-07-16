@@ -1,0 +1,62 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins';
+@import 'src/styles/typi';
+
+.navigation {
+  position: relative;
+  width: 100;
+  @include padding-xs;
+}
+
+.navigation__container {
+  display: flex;
+  justify-content: space-between;
+  @include padding-l-xxl;
+  @include padding-r-xxl;
+  @include mq($until: md) {
+    @include padding-l-sm;
+    @include padding-r-sm;
+  }
+}
+
+.navigation__logo img {
+  height: 4em;
+  animation: Main__logo--spin infinite 20s linear;
+}
+
+@keyframes Main__logo--spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.navigation__menu {
+  display: flex;
+  align-items: center;
+}
+
+.menuList {
+  display: flex;
+  list-style: none;
+}
+
+.menuList__item {
+  @include margin-l-md;
+
+  a {
+    color: $color-secondary;
+    text-transform: uppercase;
+
+    &:hover {
+      color: $color-secondary;
+      text-decoration: none;
+    }
+  }
+}
+
+.menuList__item--active {
+  border-bottom: 2px solid $color-primary;
+}
