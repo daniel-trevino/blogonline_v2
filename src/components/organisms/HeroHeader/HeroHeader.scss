@@ -1,0 +1,21 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins';
+@import 'src/styles/typi';
+
+.heroheader {
+  @include padding-t-md;
+  @include padding-b-md;
+}
+
+.heroheader__container {
+  width: 100%;
+  text-align: center;
+}
+
+.heroheader__title h1 {
+  font-size: 4em;
+}
+
+.heroheader__description p {
+  @include typi('h3');
+}
